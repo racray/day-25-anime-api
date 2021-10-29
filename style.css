@@ -1,0 +1,89 @@
+body{
+    height: 100vh;
+    background-color: beige;
+
+}
+
+.anime-list{
+    display:flex;
+    flex-wrap: wrap;
+}
+.anime-img{
+    margin: 4rem;
+    margin-bottom:10rem;
+    height:15rem;
+    width:15rem;
+}
+
+.anime-container{
+    background-color: skyblue;
+    margin: 1.5rem;
+    border-radius: 0.7rem;
+    height: 25rem;
+    color: #9A1111;
+    width: 23rem;
+    box-shadow: 2px 3px 21px 0px rgba(0,0,0,0.75);
+
+
+}
+
+.anime-container h1,.anime-container h3{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(145, 9, 36);
+    text-align: center;
+    transition: all 1s;
+    transform: translateY(50px);
+    
+    
+}
+.anime-container h3{
+    font-family: 'Pacifico', cursive;
+    color: rgb(119, 57, 13);
+}
+.anime-container:hover{
+    background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    box-shadow: 12px 13px 21px -5px rgb(245 59 59);
+    transform: scale(1.04);
+    transition:all 0.7s;
+}
+
+.anime-container h1{
+    font-size:1.9rem;
+   
+}
+
+
+
+
+
+.anime-container h1:hover{
+    color:pink;
+}
+.anime-container:hover h1{
+    transform: translate(0);
+   
+   
+}
+.anime-container:hover h1{
+    font-size: 1.6rem;
+    text-decoration: none;
+    
+}
+
+.anime-details{
+    font-family: 'Roboto', sans-serif;
+    position:relative;
+    top:3rem;
+    opacity:0;
+    transform: translateX(50px);
+    transition:all 1s;
+}
+
+
+
+
+.anime-container:hover .anime-details{
+    transform: translate(0);
+    opacity:1;
+}
+
